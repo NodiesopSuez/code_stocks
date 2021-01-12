@@ -1,0 +1,67 @@
+.edit_btn, .delete_btn {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    width: 9rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+}
+
+/*前面*/
+.edit_btn:after, .delete_btn:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 1rem;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: all .1s;
+}
+
+.edit_btn:after { 
+    content: "名前を変更する";
+    color: #295a23;
+    border: 0.1rem solid #295a23;
+}
+
+.delete_btn:after { 
+    content: "削除する";
+    color: red;
+    border: 0.1rem solid red;
+}
+
+.delete_btn:hover:after{
+    transform: translate(100%,0%);
+}
+
+.edit_btn:hover:after{
+    transform: translate(100%,0%);
+}
+
+/*背面*/
+.edit_submit_btn, .delete_submit_btn { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 0.1rem solid #ffffff;
+}
+
+.edit_submit_btn {
+    background-color: #295a23;
+}
+
+.delete_submit_btn {
+    background-color: red;
+}
