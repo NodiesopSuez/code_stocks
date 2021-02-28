@@ -1,0 +1,44 @@
+body {
+    background: #bac3c7;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    background: #ecf0f1;
+    padding: 20px;
+    border: 4px solid #fff;
+    border-radius: 12px;
+    margin: 16px auto;
+}
+
+.panel img {
+    width: 90px;
+    height: 90px;
+}
+
+.panel .stop,
+#spin {
+    line-height: 30px;
+    border-radius: 16px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.panel .stop {
+    width: 90px;
+    height: 30px;
+    background: #fc54b0;
+}
+
+#spin {
+    width: 300px;
+    height: 30px;
+    background: rgb(68, 196, 255);
+    margin: 10px auto;
+}
